@@ -1,20 +1,23 @@
 body{
   background-image: url("../images/pokeball.jpg");
   background-position: center;
+  line-height: 200%;
+
 }
 
 #container{
   border: 3px solid black;
   width: 40%;
   margin-left: 30%;
-  margin-top: 15%;
-  height: 200px;
+  margin-top: 10%;
+  height: 350px;
   position: relative;
   background: white;
+  overflow: auto;
 }
 
 #wrapper{
-  width: 300px;
+  width: 350px;
   height: 100px;
   padding: 20px;
 
@@ -47,6 +50,11 @@ button{
   cursor: pointer;
 }
 
-/* #start:hover{
+.choices{
+  margin-right: 15px;
 
-} */
+}
+
+audio{
+  display: none;
+}

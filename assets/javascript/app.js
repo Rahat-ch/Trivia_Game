@@ -15,8 +15,16 @@ $(document).ready(function(){
     correctChoice: "Bulbasaur",
   }, {
     question: "What Pokemon was the original mascot for the franchise?",
-    chioces: ["Pikachu", "Charmander", "Clefairy", "Meowth"],
+    choices: ["Pikachu", "Charmander", "Clefairy", "Meowth"],
     correctChoice: "Clefairy",
+  }, {
+    question: "What is the first Legendary Pokemon shown in the Anime?",
+    choices: ["Pikachu", "Moltres", "Ho-Oh", "Charizard"],
+    correctChoice: "Ho-Oh",
+  }, {
+    question: "Where can you capture Mewtwo in the original games?",
+    choices: ["SS Anne Truck", "Safari Zone", "Cerulean Cave", "Victory Road"],
+    correctChoice: "Cerulean Cave",
   }];
 
   // game object with functions
@@ -39,7 +47,7 @@ $(document).ready(function(){
       }
     },
     //function to load question and answers as well as to start the timer
-    //BUG: I was unable to figure out why when it gets to the last question the buttons do not append - otherwise my for loop works
+    
     loadQuestion: function(){
       timer = setInterval(trivia.timeLeft,1000);
       var qp = $("<p>");
@@ -166,11 +174,12 @@ $(document).ready(function(){
 
   //end of game object
 
+
   //click function to begin game - removes start button and then loads first question and answer choices
 
   $("#start").click(function(){
       $("#start").remove();
-      console.log(questions);
+      $('#audio').get(0).play();
       trivia.loadQuestion();
   });
 
