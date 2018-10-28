@@ -47,7 +47,7 @@ $(document).ready(function(){
       }
     },
     //function to load question and answers as well as to start the timer
-    
+
     loadQuestion: function(){
       timer = setInterval(trivia.timeLeft,1000);
       var qp = $("<p>");
