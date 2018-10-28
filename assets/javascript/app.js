@@ -32,13 +32,14 @@ $(document).ready(function(){
     //function for timer
     timeLeft: function(){
       trivia.timer --;
-      $("#timer").html(trivia.timer);
+      $("#timer").html("You have " + trivia.timer + " seconds remaining");
       if (trivia.timer<=0) {
         console.log("Time up");
         trivia.noAnswer();
       }
     },
     //function to load question and answers as well as to start the timer
+    //BUG: I was unable to figure out why when it gets to the last question the buttons do not append - otherwise my for loop works
     loadQuestion: function(){
       timer = setInterval(trivia.timeLeft,1000);
       var qp = $("<p>");

@@ -1,0 +1,52 @@
+body{
+  background-image: url("../images/pokeball.jpg");
+  background-position: center;
+}
+
+#container{
+  border: 3px solid black;
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 15%;
+  height: 200px;
+  position: relative;
+  background: white;
+}
+
+#wrapper{
+  width: 300px;
+  height: 100px;
+  padding: 20px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  margin: -70px 0 0 -170px;
+}
+
+h1{
+  font-size: 2em;
+}
+
+h2{
+  font-size: 1.5em;
+}
+
+h3{
+  font-size: 1.3em;
+}
+
+#start{
+  margin-top: 25px;
+  width: 100%;
+
+}
+
+button{
+  cursor: pointer;
+}
+
+/* #start:hover{
+
+} */
